@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seblak Khas Bandung Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="#"><img src="./img/logo1.png" class="logo"></a>
+			<ul>
+				<li><a href="uts.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="DaftarMenu.html">Daftar Menu</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textbox">
+				<h2>Juaranya Seblak<br>Pastinya<span> Seblak Khas Bandung</span></h2>
+				<p>Seblak adalah masakan khas Sunda yang dikenal berasal dari wilayah Parahyangan dengan cita rasa gurih dan pedas. Terbuat dari kerupuk basah yang dimasak dengan sayuran dan sumber protein seperti telur, ayam, boga bahari, atau olahan daging sapi, dan dimasak dengan kencur.</p>
+				<a href="https://id.wikipedia.org/wiki/Seblak">Learn More</a>
+			</div>
+			<div class="imgBox">
+				<img src="./img/12.png" class="Seblak">
+			</div>
+		</div>
+		<ul  class="thumb">
+			<li><img src="./img/11.png" onclick="imgSlider('./img/11.png');changeCircleColor('#89e6a4')"></li>
+			<li><img src="./img/12.png" onclick="imgSlider('./img/12.png');changeCircleColor('#5cbeca')"></li>
+			<li><img src="./img/13.png" onclick="imgSlider('./img/13.png');changeCircleColor('#dc89e6')"></li>
+		</ul>
+		<ul class="sci">
+			<li><a href="https://www.facebook.com/seblakmaow/"><i class='bx bxl-facebook'></i></a></li>
+			<li><a href="https://www.instagram.com/seblakbandung01_/"><i class='bx bxl-instagram' ></i></a></li>
+			<li><a href="https://www.youtube.com/watch?v=aTBTLId-dDg"><i class='bx bxl-youtube' ></i></a></li>
+		</ul>
+</section>
+<script type="text/javascript">
+	function imgSlider(anything){
+		document.querySelector('.Seblak').src = anything;
+	}
+
+	function changeCircleColor(color){
+		const circle = document.querySelector('.circle');
+		circle.style.background = color;  
+	}
+</script>
+
+</body>
+</html>
